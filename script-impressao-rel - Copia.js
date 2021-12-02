@@ -14,11 +14,12 @@
     //let displ_chave_acesso = document.getElementById('display-chave-acesso')
     //let displ_valor = document.getElementById.ById('display-valor')
 
-        window.open();
+    
         janela.document.write('<html><head>');
         janela.document.write('<title></title></head>');
         janela.document.write('<body>');
         janela.document.write(`Razão Social: ${razao_social.value} <br> <br>` )
+        janela.document.write(`CNPJ : ${cnpj.value} <br> <br>` )
         janela.document.write(`Numero NF ${555959999} <br> <br> `);
         janela.document.write(`Emissao NF ${'05/12/1950'}<br> <br>`)
         janela.document.write(`Chave Acesso ${'262262114fgd4wsd44g88sd16g9dg49fdg8k49fh849d'} <br> <br>`)
@@ -27,7 +28,7 @@
        
         janela.document.write('</body></html>');
 
-        //janela.document.close();
+         janela.document.close();
         janela.print();  
       
 }
