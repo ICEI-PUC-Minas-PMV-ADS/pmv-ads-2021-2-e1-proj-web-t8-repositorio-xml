@@ -18,6 +18,9 @@ ul{
 body { 
     background-color: #E5E5E5;                  /* Cor fundo */
     font-family: Arial, Helvetica, sans-serif;    /* Estilo fonte (o tamanho por padrão fica em 16px) */
+    width:0 auto;
+    overflow-x: hidden;/*Remover barra de rolagem horizontal quando a é minimizada*/
+  
 }
 
 
@@ -380,13 +383,13 @@ label { /* Nomes 'Email e Senha' */
 /* ---- Busca nota ----*/
 
 .mainnota{ /* Primeira ul*/
-    width: 100%;
+    width: 1920px;
     margin: auto;
     border-radius: 0px;
     float: right;
-    height: 200px;
+    height: 250px;
     padding: 40px;
-    background-color: white;
+    background-color:#ccecff
 
 }
 
@@ -397,6 +400,7 @@ label { /* Nomes 'Email e Senha' */
     margin-bottom: 0px;
 }
 
+
 .notad1{ /*texto nomes num nota cnpj...*/
     margin-bottom: 5px;
     text-align: left;
@@ -405,33 +409,73 @@ label { /* Nomes 'Email e Senha' */
 
 .inputDataNf{
     padding: 10px;
-    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    box-shadow: 2px 2px 1px 0px;
     border-radius: 10px;
+   
 }
 
 .inputRazao{
     width: 400px;
     padding: 12px;
-    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    box-shadow: 2px 2px 1px 0px;
     border-radius: 10px;
+    /*position: fixed; */
 }
 
 .inputChave{
     width: 460px;
     padding: 11px;
-    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    box-shadow: 2px 2px 1px 0px;
     border-radius: 10px;
+  /*position: fixed; */
 }
 
 .inputCnpj{
     width: 460px;
     padding: 11px;
-    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    box-shadow: 2px 2px 1px 0px;
     border-radius: 10px;
+    /*position: fixed; */
 }
-
-#btnBuscaNota{
+#menu-buscar{
+    width: 1945px;
+    height: 35px;
+    background-color:#ffffff;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(22, 114, 194, 0.295);
+    margin-top: 75px;
+    padding: 10px;
+    font-size: 8px;
+    text-align: center;  
+    
+}
+#bot-buscar{  
+    width: 180px;
+    height: 30px;  
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
     float: right;
+    margin-right: 140px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+#btnBuscaNota{
+    width: 240px;
+    height: 30px;  
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 15px arial, "sans serif" ;
+    float: right;
+    margin-right: 830px;
+    margin-bottom: 30px;
+    font-size: 15px;
 }
 
 .mainnota >.notaul2{ /*Segunda Ul*/
@@ -475,7 +519,7 @@ label { /* Nomes 'Email e Senha' */
     border-width: 5px; /* Espessura da borda*/ 
     border-color: #0e98e27a ;
     color: white;
-    font: normal bold 1em arial, "sans serif" ;
+    font: normal bold 15px arial, "sans serif" ;
     font-size:15px;
 }
 #bot-relatorios { /* Botão Entrar - Login */
@@ -487,7 +531,7 @@ label { /* Nomes 'Email e Senha' */
     border-width: 5px; /* Espessura da borda*/ 
     border-color: #0e98e27a ;
     color: white;
-    font: normal bold 1em arial, "sans serif" ;
+    font: normal bold 15px arial, "sans serif" ;
     font-size:15px;
 }
 #data-inicial{
@@ -499,8 +543,8 @@ label { /* Nomes 'Email e Senha' */
     font-size: 20px;
     box-shadow: 2px 2px 1px 0px;
     border-radius: 8px;
-    font-size: 1.8em;
-    font-family: monospace;
+    font-size: 15px;
+    
 }
 
 #data-final{
@@ -512,8 +556,7 @@ label { /* Nomes 'Email e Senha' */
     font-size: 20px;
     box-shadow: 2px 2px 1px 0px;
     border-radius: 8px;
-    font-size: 1.8em;
-    font-family: monospace;      
+    font-size: 15px;     
 }
 
 #razao-social{
@@ -548,7 +591,7 @@ label { /* Nomes 'Email e Senha' */
     border-color: #0e98e27a ;
     background-color: #039EF2;
     color: white;
-    font: normal bold 1em arial, "sans serif" ;
+    font: normal bold 15px arial, "sans serif" ;
     margin-right: 350px;
     margin-top: 15px;
     font-size: 15px;
@@ -564,13 +607,13 @@ label { /* Nomes 'Email e Senha' */
     color: white;
     font: normal bold 1em arial, "sans serif" ;
     float: right;
-    margin-right: 50px;
+    margin-right: 100px;
     margin-top: 30px;
     font-size: 15px;
 }
 
 #menu-superior { 
-    width: 100%;
+    width: 1900px;
     height: 130px;
     background-color:#caecff;
     border-radius: 20px;
@@ -579,22 +622,10 @@ label { /* Nomes 'Email e Senha' */
     margin-right: 550px;
     margin-top: 15px;
     padding: 10px;
-    font-size: 0.6em;
+    font-size: 8px;
     text-align: center;
 }
-#menu-infos{
-    width: 100%;
-    height: 70px;
-    background-color:#eff8ff;
-    border-radius: 20px;
-    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
-    margin: auto;
-    margin-right: 550px;
-    margin-top: 0px;
-    padding: 10px;
-    font-size: 0.6em;
-    text-align: center; 
-}
+
 ::placeholder{
     font-family: monospace;
     font: bold;
@@ -610,23 +641,24 @@ label { /* Nomes 'Email e Senha' */
  margin: auto;
     margin-left: 400px;
     padding: 10px;
-    font-size: 0.6em;
+    font-size: 8px;
     text-align: center;
     margin-bottom: 300px;
 }
 #menu-infos{
-    width: 100%;
+    width: 1900px;
     height: 35px;
-    background-color:#eff8ff;
+    background-color:#ffffff;
     border-radius: 0px;
     box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
     margin: auto;
     padding: 10px;
-    font-size: 0.6em;
-    text-align: center;   
+    font-size: 8px;
+    text-align: center;  
+    
 }
 #resultados{
-    width: 100%;
+    width: 1900px;
     height: 60px;
     background-color:white;
     border-radius: 0px;
@@ -635,7 +667,7 @@ label { /* Nomes 'Email e Senha' */
     margin-right: 550px;
     margin-top: 1px;
     padding: 10px;
-    font-size: 0.6em;
+    font-size: 8px;
     text-align: center;
 }
 .checkbox{
@@ -645,7 +677,7 @@ label { /* Nomes 'Email e Senha' */
 .numero-nf{
     float: left;
     margin-left: 100px;
-    font-size: 2em; 
+    font-size: 19px; 
     margin-right: 1px;
 }
 
@@ -653,30 +685,30 @@ label { /* Nomes 'Email e Senha' */
     float: left;
     margin-left: 100px;
     margin-right: 40px;
-    font-size: 2em;
+    font-size: 19px;
 
 }
 .procura-razao-social{
     float: left;
     margin-left: 130px;
-    font-size: 2em;
+    font-size: 19px;
     margin-right: 80px;
 }
 .chave-acesso{
     float: left;
     margin-left: 200px;
     margin-right: 50px;
-    font-size: 2em;
+    font-size: 19px;
 }
 .valor{
     float: left;
-    margin-left: 250px;
-    font-size: 2em;
+    margin-left: 180px;
+    font-size: 19px;
 }
 .download{
     float: left;
-    margin-left: 150px;
-    font-size: 2em;
+    margin-left: 175px;
+    font-size: 19px;
 }
 
 #display-numero-nf{
@@ -698,7 +730,6 @@ label { /* Nomes 'Email e Senha' */
 }
 #display-data-emissao{
     float: left;
-    margin-right: 25px;
     font-size: 15px;
     margin-top: 5px; 
     height: 30px;
@@ -706,16 +737,17 @@ label { /* Nomes 'Email e Senha' */
     margin-top: 10px;
     box-shadow: 2px 2px 1px 0px;
     border-radius: 8px;
-    margin-left: -90px;
+    margin-left: 370px;
     background-color: white;
     padding-top: 5px;
     font: bold;
     text-align: center;
+    position: fixed;
 
 }
 #display-razao-social{
     float: left;
-    margin-left: 50px;
+    margin-left: 595px;
     font-size: 19px;
     margin-top: 5px; 
     height: 30px;
@@ -727,16 +759,16 @@ label { /* Nomes 'Email e Senha' */
     font: bold;
     text-align: center;
     padding-top: 5px;
+    position: fixed;
 
 }
 #display-chave-acesso{
     float: left;
-    margin-left: 50px;
+    margin-left: 950px;
     font-size: 15px;
     margin-top: 5px; 
     height: 30px;
-    width: 470px;
-    margin-right:50px;
+    width: 390px;
     margin-top: 10px;
     box-shadow: 2px 2px 1px 0px;
     border-radius: 8px;
@@ -744,10 +776,11 @@ label { /* Nomes 'Email e Senha' */
     padding-top: 5px;
     font: bold;
     text-align: center;
+    position: fixed;
 }
 #display-valor{
     float: left;
-    margin-left: 20px;
+    margin-left: 1400px;
     font-size: 15px;
     margin-top: 5px; 
     height: 30px;
@@ -759,5 +792,6 @@ label { /* Nomes 'Email e Senha' */
     padding-top: 5px;
     font: bold;
     text-align: center;
+    position:fixed;
 }
     
