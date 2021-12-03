@@ -10,7 +10,7 @@
     <!--Chamando CSS-->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="script-impressao-rel.js"></script>
+    <!-- <script src="script-impressao-rel.js"></script> -->
     <script src="script-procurar.js"></script>
     <script src="script-logout.js"></script>
     <title>REPX - Busca Relatórios</title>
@@ -24,13 +24,14 @@
                 <!--Opções menu superior - Pos Login-->
                 <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
     <main id="menu-superior">
         <input type="number" name="cnpj" id="cnpj" placeholder="CNPJ">
         <input type="text" name="razao-social" id="razao-social" placeholder="Razão Social">
+        <input type="number" name="Número NF" id="nf" placeholder="Número NF">
         <input type="date" name="data-final" id="data-final" placeholder="Data Final">
         <input type="date" name="data-inicial" id="data-inicial" placeholder="Data inicial">
         <input type="button" name="procurar" id="bot-procurar" value="Procurar" onclick="procurar()"></input>
@@ -69,31 +70,32 @@
         <div>
             <ul type="none">
                 <li class="download">Download</li>
-                <input type="button" name="imprimir" id="bot-imprimir" value="Imprimir" onclick="imprimirRelatorio()"></input></a>
             </ul>
+            <!-- <ul type="none">
+                <li class="download">Download</li>
+                <input type="button" name="imprimir" id="bot-imprimir" value="Imprimir" onclick="imprimirRelatorio()"></input></a>
+            </ul> -->
         </div>
-
 
     </div>
+    <!-- <div>
+        <ul id="res">
+            <li id="display-numero-nf"></li>
+            <li id="display-data-emissao"></li>
+            <li id="display-razao-social"></li>
+            <li id="display-razao-social"></li>
+            <li id="display-chave-acesso"></li>
+            <li id="display-valor"></li>
+        </ul>
+    </div> -->
     <div>
-        <div id="display-numero-nf" >
-           
-        </div>
-
-        <div id="display-data-emissao">
-            
-        </div>
-
-        <div id="display-razao-social">
-            
-        </div>
-
-        <div id="display-chave-acesso">
-         
-        </div>
-        <div id="display-valor">
-       
-        </div>
+        <div id="display-numero-nf"></div>
+        <div id="display-data-emissao"> </div>
+        <div id="display-razao-social"></div>
+        <div id="display-chave-acesso"></div>
+        <div id="display-valor"></div>
+        <input type="button" name="imprimir" id="bot-imprimir" value="Imprimir"
+            onclick="imprimir()()"></input></a>
     </div>
 
     <footer>

@@ -27,7 +27,7 @@ function procurar() {
             },
             {
                 numeroNF: '546',
-                dataEmissao: '01/10/2021',  
+                dataEmissao: '01/10/2021',
                 razaoSocial: 'ByeBye LTDA',
                 chaveAcesso: '12345678912345678912345678912345678912345678',
                 valorNF: 'R$ 10000,00'
@@ -86,11 +86,9 @@ function exibirRelatorio(relatorio, i) {
     display_chave_acesso.insertAdjacentHTML("beforeend", `${relatorio.dados[i].chaveAcesso} <br><br>`);
     display_valor.insertAdjacentHTML("beforeend", `${relatorio.dados[i].valorNF} <br><br>`);
 
-    //imprimir(relatorio,i);
-
 }
 
-// Tem que ajustar a impressão
+
 function imprimir(relatorio, i) {
     //teste
     //procurar();
