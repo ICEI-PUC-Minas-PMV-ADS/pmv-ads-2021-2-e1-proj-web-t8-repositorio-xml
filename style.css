@@ -586,13 +586,15 @@ label { /* Nomes 'Email e Senha' */
 
 #cnpj{
     float: right;
-    height: 35px;
+    /* height: 35px; */
     width: 200px;
     margin-right: 300px;
     margin-top: 45px;
     font-size: 20px;
-    box-shadow: 2px 2px 1px 0px;
-    border-radius: 8px;
+    background-color: transparent;
+    border-color: transparent;
+    /* box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px; */
 }
 
 #bot-procurar{
@@ -611,6 +613,8 @@ label { /* Nomes 'Email e Senha' */
 }
 
 #bot-imprimir{  
+    position: fixed;
+    right: 180px;
     width: 130px;
     height: 30px;  
     border-radius: 30px;             /* Arredondamento */ 

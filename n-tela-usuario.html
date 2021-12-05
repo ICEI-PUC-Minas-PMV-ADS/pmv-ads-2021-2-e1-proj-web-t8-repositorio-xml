@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="script-impressao-rel.js"></script>
     <script src="script-logout.js"></script>
-    <title>Impressão Relatório</title>
+    <script src="script.js"></script>
+    <script src="script-usuario.js"></script>
+    <title>REPX - Usuário</title>
 </head>
-<body>
+
+<body onload="dadosUser()">
+    <!-- Pós Login-->
     <header>
         <!--Menus superior - Fixo-->
         <nav class="menu-superior">
             <ul>
                 <!--Opções menu superior - Pos Login-->
-                <li class="contato"><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <div id="dados">
-        <h3><strong><br>Relatórios<br></strong></h3>
-        <p>- Número NF-e: </p>
-        <p>- Data Emissão: </p>
-        <p>- Razão Social: </p>
-        <p>- Chave de Acesso: </p>
-        <p>- Valor: </p>
-        <div><button id="btnImprimir" onclick="imprimirRelatorio()">Imprimir</button></div>
-    </div>
+    <main class="mainat">
+        <p>aqui</p>
+         <div id="dados-usuario"></div>
+    </main>
+
     <footer>
         <!--Rodapé - Lado Esquerdo-->
         <div class="footer-pos">
@@ -47,13 +49,11 @@
                     <!--Caixa email-->
                     <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
                     <!--Botão 'enviar' (chama função)-->
-                    <input type="button" value="Enviar" id="bot-enviar">
+                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
                 </p>
             </div>
         </div>
-        
     </footer>
-
-
 </body>
+
 </html>
