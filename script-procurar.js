@@ -62,7 +62,7 @@ function buscar(relatorio) {
     // Iterando o array e verificando se a entrada corresponde com algum elemento
     for (let i = 0; i < relatorio.dados.length; i++) {
         if (buscaNum == 0 && buscaRazaoSocial == false) {       // Se o user não digitou nada, então busca todo array
-            //alert("entrou")
+           // alert("entrou")
             exibirRelatorio(relatorio, i);
         }
         if (buscaNum) {                 // Se digitou numero NF, então compara
