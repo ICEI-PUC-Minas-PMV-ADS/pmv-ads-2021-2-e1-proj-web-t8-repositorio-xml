@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script-logout.js"></script>
     <script src="script.js"></script>
+    <!-- <script src="script-usuario.js"></script> -->
     <title>REPX - Menu</title>
 </head>
 
@@ -21,7 +22,7 @@
             <ul>
                 <!--Opções menu superior - Pos Login-->
                 <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
-                <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
+                <!-- <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li> -->
                 <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
@@ -40,7 +41,9 @@
             <hr>
             <p>Minha conta</p>
             <hr>
-            <a href="tela-usuario.html"><input type="button" value="Meus dados" id="bot-busca"></a>
+            <div id="dados-usuario""></div>
+            <a href="tela-usuario.html"></a>
+            <a href="tela-usuario-atualizar.html"><input type="button" value="Meus dados" id="bot-busca"></a>
             <a href="tela-alterar-senha.html"><input type="button" value="Alterar senha" id="bot-busca"></a>
             <hr>
         </div>

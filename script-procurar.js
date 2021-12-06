@@ -1,55 +1,78 @@
- function procurar(){
+// Getando relatório via array
+function procurar() {
 
-    let razao_social = document.getElementById('razao-social')
+    let relatorio = {
+        dados: [
+            {
+                numeroNF: '12',
+                dataEmissao: '01/09/2021',
+                razaoSocial: 'Amazing LTDA',
+                chaveAcesso: '12345678912345678912345678912345678912345678',
+                valorNF: 'R$ 200.00'
+            },
+            {
+                numeroNF: '546',
+                dataEmissao: '01/10/2021',
+                razaoSocial: 'ByeBye LTDA',
+                chaveAcesso: '12345678912345678912345678912345678912345678',
+                valorNF: 'R$ 10000.00'
+            },
+            {
+                numeroNF: '546',
+                dataEmissao: '01/09/2021',
+                razaoSocial: 'Saudades LTDA',
+                chaveAcesso: '12345678912345678912345678912345678912345678',
+                valorNF: 'R$ 2200.00'
+            },
+            {
+                numeroNF: '546',
+                dataEmissao: '01/10/2021',
+                razaoSocial: 'Abacate',
+                chaveAcesso: '12345678912345678912345678912345678912345678',
+                valorNF: 'R$ 100.00'
+            }
+        ]
+    }
+    buscar(relatorio);
+}
+
+// Fazendo a busca de acordo com os dados informados pelo usuário
+function buscar(relatorio) {
+
+    let inputNF = document.querySelector('#nf');
+    let inputRazaoSocial = document.querySelector('#razao-social'); // aqui
+
+    // Pegando valores da input do usuário
+    let buscaNum = Number(inputNF.value);
+    let buscaRazaoSocial = inputRazaoSocial.value;
+
+    // Iterando o array e verificando se a entrada corresponde com algum elemento
+    for (let i = 0; i < relatorio.dados.length; i++) {
+        if (buscaNum == 0 && buscaRazaoSocial == false) {
+            //alert("entrou")
+            exibirRelatorio(relatorio, i);
+        }
+        if (buscaNum) {                 // Por número nota
+            if (buscaNum == relatorio.dados[i].numeroNF) {
+                exibirRelatorio(relatorio, i)
+            }
+        }
+        else if (buscaRazaoSocial) {        // Por razão social - string
+            // toUpperCase() para converter tudo para maiúscula, assim o usuário pode digitar em minúscula que não fará diferença
+            let strUpper = relatorio.dados[i].razaoSocial.toUpperCase();
+            if (buscaRazaoSocial.toUpperCase() == strUpper) {
+                exibirRelatorio(relatorio, i)
+            }
+        }
+    }
+}
+
+// Exibindo dados selecionados na tela
+function exibirRelatorio(relatorio, i) {
+
+    let display_numero_nf = document.getElementById('display-numero-nf')
+    let display_data_emissao = document.getElementById('display-data-emissao')
     let display_razao_social = document.getElementById('display-razao-social')
-<<<<<<< Updated upstream
-    let numero_nf = document.getElementById('display-numero-nf')
-    let data_emissao = document.getElementById('display-data-emissao')
-    let chave_acesso = document.getElementById('display-chave-acesso')
-    let valor = document.getElementById('display-valor')
-    
-
-    display_razao_social.innerHTML = razao_social.value
-    numero_nf.innerHTML = '123'
-    data_emissao.innerHTML = '05/11/2021'
-    chave_acesso.innerHTML = '1234567891234567891234567891234567891234567'
-    valor.innerHTML = "R$ 1250,00"
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
     let display_chave_acesso = document.getElementById('display-chave-acesso')
     let display_valor = document.getElementById('display-valor')
 
@@ -73,7 +96,7 @@ function salvarLocalStorage(relatorio, i) {
             'dataEmissao': relatorio.dados[i].dataEmissao,
             'razaoSocial': relatorio.dados[i].razaoSocial,
             'chaveAcesso': relatorio.dados[i].chaveAcesso,
-            'valorNF': relatorio.dados[i].valorNF,
+            'valoNF': relatorio.dados[i].valorNF,
         });
 
         localStorage.setItem('relatorioImpressao', JSON.stringify(relatorioImpressao));
@@ -84,7 +107,7 @@ function limpaTela() {
     location.reload();
 }
 
-Imprimindo 
+// Imprimindo 
 function imprimirRelatorio() {
 
     for (let i = 0; i < localStorage.length; i++) {
@@ -104,7 +127,7 @@ function imprimirRelatorio() {
             // let janela = window.open();
             // janela.document.write(str);
             // formataString(str); // aqui teste
-            //localStorage.removeItem('relatorioImpressao');
+            localStorage.removeItem('relatorioImpressao');
         }
     }    
 }
@@ -114,7 +137,7 @@ function imprimirRelatorio() {
 // AQUI PARA BAIXO SÃO OS TESTES DE FORMATAÇÃO DE STRING
 // PARA TESTAR, COMENTA A FUNÇÃO ACIMA imprimirRelatorio()
 
-// // // Imprimindo
+// // Imprimindo
 // function imprimirRelatorio() {
 
 //     for (let i = 0; i < localStorage.length; i++) {
@@ -130,7 +153,7 @@ function imprimirRelatorio() {
 //             // janela.print();            
 
 //             limpaTela();
-//             // localStorage.removeItem('relatorioImpressao');
+//             localStorage.removeItem('relatorioImpressao');
 //             // let janela = window.open();
 //             // janela.document.write(str);
 //             formataString(str);
@@ -142,7 +165,6 @@ function imprimirRelatorio() {
 // function formataString(str) {
 //     // array para salvar as posições e salvar as alterações.
 //     let newStr = [];            // Esse array será passado para a impressão
-//     let endStr = [];
 
 //     // Varrendo a string que foi salva em 'str' na função imprimirRelatorio()
 //     for (let i = 0; i < str.length; i++) {
@@ -179,40 +201,22 @@ function imprimirRelatorio() {
 //         if (newStr[j] == ',') {
 //             newStr[j] == " ";
 //         }
-//         // imprimir(newStr[j]); // Chamando a função, posição a posição. Aqui é o problema
-//         endStr += newStr[j];
-//     }
-//     // alert(endStr);
-//     imprimir(endStr);
+//         imprimir(newStr[j]); // Chamando a função, posição a posição. Aqui é o problema
+//     }    
 // }
 
 
-// function imprimir(endStr) { //ERRO
-//     //alert("entrou")
-//     let janela = window.open();
-//     janela.document.write("REPX - Relatórios<hr><br><br>");
-//     janela.document.write(endStr);                    // Exibindo localStorage em nova janela
-//     janela.document.write("<br><br><hr>")
-//     janela.print();
-//     //document.write(endStr);
-
-
-//     //    for (let i = 0; i < endStr.length; i++){
-//     //     document.write(endStr);
-//     //    }
-
-//     // document.write(endStr);
+// function imprimir(newStr) { //ERRO
+//     document.write(newStr);
+//     // let janela = window.open();
 //     // janela.document.write("<br><br>");
-//     //  janela.print();
-//     //limpaTela();
-
+//     // janela.print();
+//     // limpaTela();
+//     // localStorage.removeItem('relatorioImpressao');
+//     // let janela = window.open();
+//     // janela.document.write(str);
 // }
-
-
-
 
 // TESTES ATÉ AQUI
 //------------------------------------------------------------------------------
->>>>>>> Stashed changes
 
-}
