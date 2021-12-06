@@ -795,3 +795,74 @@ label { /* Nomes 'Email e Senha' */
     position:fixed;
 }
     
+/* Os seguintes displays são referentes as divs da tela busca-xml*/
+#display-numero-nf-busca{
+    float: left;
+    font-size: 17px;
+    margin-top: 10px; 
+    height: 30px;
+    width: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 10px;
+    padding: 3px;
+    font: bold;
+    text-align: center;
+
+}
+#display-data-emissao-busca{
+    float: left;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 370px;
+    padding-top: 5px;
+    font: bold;
+    text-align: center;
+    position: fixed;
+
+}
+#display-razao-social-busca{
+    float: left;
+    margin-left: 595px;
+    font-size: 19px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    font: bold;
+    text-align: center;
+    padding-top: 5px;
+    position: fixed;
+
+}
+#display-chave-acesso-busca{
+    float: left;
+    margin-left: 950px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 390px;
+    margin-top: 10px;
+    padding-top: 5px;
+    font: bold;
+    text-align: center;
+    position: fixed;
+}
+#display-valor-busca{
+    float: left;
+    margin-left: 1400px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    padding-top: 5px;
+    font: bold;
+    text-align: center;
+    position:fixed;
+}
+    
+
