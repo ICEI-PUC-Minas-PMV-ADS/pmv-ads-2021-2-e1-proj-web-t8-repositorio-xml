@@ -612,9 +612,7 @@ label { /* Nomes 'Email e Senha' */
     font-size: 15px;
 }
 
-#bot-imprimir{  
-    position: fixed;
-    right: 180px;
+#bot-imprimir{ 
     width: 130px;
     height: 30px;  
     border-radius: 30px;             /* Arredondamento */ 
@@ -623,8 +621,8 @@ label { /* Nomes 'Email e Senha' */
     background-color: #039EF2;
     color: white;
     font: normal bold 1em arial, "sans serif" ;
-    float: right;
-    margin-right: 20px;
+   position: fixed;
+    margin-left: 1125px;
     margin-top: 30px;
     font-size: 15px;
 }
