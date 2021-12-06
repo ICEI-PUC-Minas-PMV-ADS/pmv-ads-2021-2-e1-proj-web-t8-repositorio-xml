@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script-logout.js"></script> -->
+    <!--<script src="script.js"></script>-->
+    <title>REPX - Busca Nota</title>
+</head>
+<!--.cadcaixa-->
+<body>
+    <header> <!--Pós Login-->
+        <!--Menus superior - Fixo-->
+        <nav class="menu-superior">
+            <ul>
+                <!--Opções menu superior - Pos Login-->
+                <li class="sobre-pos"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
+                <!-- <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li> -->
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>Tela busca - Em processo</div>
+    <main class="mainnota"> 
+        <ul type="none" class="notaul1">
+            <li>
+                <p class="notad1">Número NF</p><input type="number" name="notanum" id="notanum" class="inputDataNf">
+            </li>
+            <li>
+                <p class="notad1">Data Inicial</p><input type="date" name="notadtin" id="notadtin" class="inputDataNf">
+            </li>
+             <li>
+                 <p class="notad1">Data Final</p><input type="date" name="notadtfim" id="notadtfim" class="inputDataNf">
+             </li>
+            <li>
+                <p class="notad1">Razão Social</p><input type="text" name="notaraz" id="notaraz" class="inputRazao">
+            </li>
+        </ul>
+        <ul type="none" class="notaul1">
+            <li>
+                <p class="notad1">Chave Acesso</p><input type="number" name="notachave" id="notachave" class="inputChave">
+            </li>
+            <li>
+                <p class="notad1">CNPJ</p><input type="number" name="notacnpj" id="notacnpj" class="inputCnpj">
+            </li>
+        </ul>
+        <p><input type="button" value="Buscar Nota" id="btnBuscaNota" onclick="buscarNota()"></p>
+    </main>
+    <footer>
+        <!--Rodapé - Lado Esquerdo-->
+        <div class="footer-pos">
+            <div class="elementos-pos">
+                <ul type="none">
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                            rel="external">Sefaz
+                            Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pos">
+                <p>Dúvidas:
+                    <!--Caixa email-->
+                    <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
+                    <!--Botão 'enviar' (chama função)-->
+                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
