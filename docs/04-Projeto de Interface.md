@@ -1,30 +1,3 @@
-
-Como visto Anteriormente nos relatorios equipe está organizada da seguinte maneira:  
-
-    Scrum Master: Carlos Hilario Siqueira Camuzzi  
-
-    Product Owner:  Adriana Silva Lacerda  
-
-    Equipe de Desenvolvimento:  
-
-    Carlos Hilario Siqueira Camuzzi 
-
-    Felipe Costa Moreira 
-
-    Ila Feitosa da Nóbrega 
-
-    Júlia de Oliveira Sartori 
-
-    Equipe de Design:  
-
-    Gabriel Antônio Lopes Costa 
-
-    Ila Feitosa da Nóbrega 
-
-    Júlia de Oliveira Sartori 
-
- 
-
 # IMPLEMENTAÇÃO DO SISTEMA 
 
 A Implementação se deu através dos seguintes linguagens HTML, CSS, e JavaScript. Até o presente momento foi utilizado as como principais soluções o CSS com 50,6%, o HTML com 42,6% e o JavaScript com 6,8% do programa.  
