@@ -4,7 +4,7 @@ Nesta seção são apresentados os detalhes técnicos da solução criada pela�
 
  
 
- # 5.1 Diagrama de Componentes  
+ 5.1 Diagrama de Componentes  
 
 Os componentes que fazem parte da solução são apresentados na Figura 20.  
 
