@@ -1,4 +1,4 @@
-5. Plano de Testes de Software  
+# 5. Plano de Testes de Software  
 
 Os requisitos para realização dos testes de software são:  
 
@@ -14,7 +14,7 @@ Os requisitos para realização dos testes de software são: 
 
   
 
-Caso de Teste  
+# Caso de Teste  
 	
 
 CT-01 – Ser capaz de procurar uma XML de acordo com os campos de data inicial, data final, razão social e CNPJ inseridos nos campos de entradas de dados  
@@ -26,7 +26,7 @@ RF-01 - O site deve apresentar as informações da empresa solicitante de ac
 
   
 
-Objetivo do Teste  
+# Objetivo do Teste  
 	
 
 Verificar se a função procurar está buscando corretamente os dados da nota fiscal  
@@ -57,7 +57,7 @@ Critérios de Êxito 
 
  
 
-Caso de Teste  
+# Caso de Teste  
 	
 
 CT-02 – Ser capaz de realizar o download das principais informações da nota fiscal procurada  
@@ -89,7 +89,7 @@ Passos 
 
   
 
-Critérios de Êxito  
+# Critérios de Êxito  
 	
 
 A página deve ser capaz de buscar corretamente os itens de acordo com o que foi inserido nos campos de busca e ser capaz de realizar o download do PDF gerado com as devidas informações da nota fiscal do solicitante  
@@ -98,7 +98,7 @@ A página deve ser capaz de buscar corretamente os itens de acordo com o que
 
   
 
-  5.1 Casos de teste  
+  # 5.1 Casos de teste  
 
     CT-02  
 
@@ -116,6 +116,6 @@ A página deve ser capaz de buscar corretamente os itens de acordo com o que
 
  
 
-5.2 Registro de Testes de Software   
+# 5.2 Registro de Testes de Software   
 
   
