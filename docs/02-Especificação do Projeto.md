@@ -10,11 +10,11 @@ Os profissionais que colaboraram no processo de entendimento do problema estão 
 ________________________________________________________________________________________
 Nome | Idade | Ocupação
 ---|---|---
-![Contadora](https://user-images.githubusercontent.com/91077484/136856943-c6c93faa-0d13-412d-91e5-8a7c2f432d67.png)**Ana Alice Soares** | 42 anos | Contadora, com experiência na área financeira. Atua em uma empresa de pequeno porte no ramo do vestuário voltado para público infantil.  
+![Contadora](https://user-images.githubusercontent.com/91077484/136856943-c6c93faa-0d13-412d-91e5-8a7c2f432d67.png)**Ana Alice Soares** | 27 anos | Estudante de Enfermagem. Mãe solteira, também trabalha meio período em uma livraria local pertencente ao avô de uma de suas amigas, com o intuito de conseguir manter seus estudos e ainda colaborar em casa e na criação de seu filho..  
 
 Aplicativos | Motivações | Frustrações | Hobbies/História
 ---|---|---|---
-Instagram;<br> Facebook. | Incentivar os filhos a encontrarem uma carreira profissional que os deixa feliz. | Pouco tempo com a família;<br>  Grande volume de trabalho. | Adora filmes com histórias comoventes; <br> Mãe da Joana e do Renato, gosta de viajar com os filhos quando tem tempo.  
+Instagram;<br> TikTok;<br> |  Encontrar o equilíbrio entre investir em si mesma para alcançar seu sonho de ser enfermeira, agora que está de volta ao ensino superior, e prover as melhores condições e oportunidades para o crescimento de seu filho, agora com 5 anos, colaborando em suas despesas que são arcadas majoritariamente pelos avós do menino (seus pais). | Não sobra dinheiro algum para extras (roupas, cursos, cinema, entre outros);<br>Pouco ou nenhum tempo livre | Gosta de gravar conteúdo para a rede social Instagram sobre ser mãe de primeira viagem e solteira, tendo uma base modesta, mas sólida de seguidores. Ultimamente tem se interessado por ambientalismo e sustentabilidade.<br>Tornou-se mãe solteira aos 22 anos, quando ainda estava no 3º período de enfermagem; decidiu dar uma pausa nos estudos por uns anos até que seu filho fosse maior.   
 
  ________________________________________________________________________________________
  Nome | Idade | Ocupação
